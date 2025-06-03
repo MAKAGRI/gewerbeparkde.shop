@@ -1,39 +1,49 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <title>Gewerbepark Vetschau GmbH</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
+      font-family: Arial, sans-serif;
       background: #f4f4f4;
-      color: #333;
+      color: #1c1c1c;
     }
     header {
-      background-color: #1a237e;
+      background: #003366;
       color: white;
-      padding: 40px 20px;
       text-align: center;
-    }
-    section {
       padding: 40px 20px;
+    }
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 60px 20px;
       background: white;
       border-bottom: 1px solid #ddd;
     }
-    section img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      margin-top: 20px;
+    .section img {
+      width: 100%;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 8px;
+    }
+    .text {
+      flex: 1;
+      padding: 20px;
+      min-width: 300px;
+    }
+    .map {
+      background: #eef0f3;
+      text-align: center;
+      padding: 40px 20px;
     }
     footer {
-      background-color: #1a237e;
+      background: #003366;
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
     }
   </style>
 </head>
@@ -41,35 +51,48 @@
 
 <header>
   <h1>Gewerbepark Vetschau GmbH</h1>
-  <p>Email: admin@gewerbeparkde.shop | Phone: +49 1577 6145537</p>
+  <p>E-Mail: admin@gewerbeparkde.shop | Telefon: +49 1577 6145537</p>
 </header>
 
-<section>
-  <h2>About Us</h2>
-  <p>At Gewerbepark Vetschau GmbH, we specialize in real estate management and holding services. Our company is built on a strong foundation of professionalism and innovation in the real estate and rental industry. Whether you're looking for development support or management excellence, we offer the highest quality services tailored to your needs.</p>
-  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Real Estate">
+<section class="section">
+  <div class="text">
+    <h2>Immobilienmanagement</h2>
+    <p>Unser Team bietet moderne Lösungen für die Verwaltung, Vermietung und Entwicklung von Immobilien in ganz Bayern. Wir arbeiten eng mit unseren Partnern zusammen, um innovative und rentable Projekte zu schaffen.</p>
+  </div>
+  <img src="https://images.unsplash.com/photo-1742367539759-6e4fc2e39209?q=80&w=2532&auto=format&fit=crop" alt="Immobilien">
 </section>
 
-<section>
-  <h2>Our Location</h2>
-  <p>📍 Kulmbacher Str. 8, Regensburg, Bayern, Germany</p>
-  <iframe src="https://www.google.com/maps?q=Kulmbacher+Str.+8,+93057+Regensburg,+Germany&output=embed" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
+<section class="section">
+  <img src="https://images.unsplash.com/photo-1748679979638-e02b2df71540?q=80&w=2664&auto=format&fit=crop" alt="Standort">
+  <div class="text">
+    <h2>Strategischer Standort</h2>
+    <p>Unser Gewerbepark befindet sich in Regensburg, Bayern – einem der wachstumsstärksten Wirtschaftszentren Deutschlands. Die Lage bietet ideale Bedingungen für Unternehmen jeder Größe.</p>
+  </div>
 </section>
 
-<section>
-  <h2>Our Mission</h2>
-  <p>We are committed to facilitating effective and sustainable solutions in property leasing and management. Our team takes pride in building partnerships that stand the test of time.</p>
-  <img src="https://images.unsplash.com/photo-1509395283935-14cba1b12e80" alt="Mission">
+<section class="section">
+  <div class="text">
+    <h2>Vielfältige Branchen</h2>
+    <p>Wir unterstützen Unternehmen in unterschiedlichen Sektoren wie Automobiltechnik, Maschinenbau, Immobilienleasing und Handel. Unser Ziel ist es, wirtschaftliches Wachstum nachhaltig zu fördern.</p>
+  </div>
+  <img src="https://images.unsplash.com/photo-1744063892383-bb99dd80d7c7?q=80&w=2535&auto=format&fit=crop" alt="Industrie">
 </section>
 
-<section>
-  <h2>Core Services</h2>
-  <p>Our offerings include asset leasing, development advisory, and infrastructure optimization for commercial spaces. Discover the difference our services can make in your operations.</p>
-  <img src="https://images.unsplash.com/photo-1599427303058-f04f18f3a2fa" alt="Services">
+<section class="section">
+  <img src="https://images.unsplash.com/photo-1747586286898-d4cc40779712?q=80&w=2564&auto=format&fit=crop" alt="Infrastruktur">
+  <div class="text">
+    <h2>Moderne Infrastruktur</h2>
+    <p>Unsere Einrichtungen sind modern ausgestattet und bieten optimale Bedingungen für Logistik, Lagerung und Produktion. Jedes Objekt ist flexibel nutzbar und nach neuesten Standards konzipiert.</p>
+  </div>
 </section>
+
+<div class="map">
+  <h3>📍 Standort</h3>
+  <p>Regensburg, Bayern, Deutschland</p>
+</div>
 
 <footer>
-  <p>&copy; 2025 Gewerbepark Vetschau GmbH. All rights reserved.</p>
+  <p>&copy; 2025 Gewerbepark Vetschau GmbH. Alle Rechte vorbehalten.</p>
 </footer>
 
 </body>
